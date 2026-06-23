@@ -2,8 +2,8 @@
 Changelog for package onnxruntime_vendor
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.1.0 (2026-06-23)
+------------------
 * Remove added changelog file and reset package version to 0.0.0
 * Fix licensing and add ros-controls maintainers
 * Fix dependencies
