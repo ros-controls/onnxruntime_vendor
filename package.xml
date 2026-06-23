@@ -1,6 +1,6 @@
 <package format="3">
   <name>onnxruntime_vendor</name>
-  <version>1.21.0</version>
+  <version>0.0.0</version>
   <description>Vendor package for ONNX Runtime 1.24.3</description>
 
   <author email="juliajster@gmail.com">Julia Jia</author>
