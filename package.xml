@@ -4,7 +4,13 @@
   <description>Vendor package for ONNX Runtime</description>
   <maintainer email="juliajster@gmail.com">Julia Jia</maintainer>
   <license>Apache-2.0</license>
+
   <buildtool_depend>ament_cmake</buildtool_depend>
+  <buildtool_depend>ament_cmake_vendor_package</buildtool_depend>
+  <buildtool_depend>git</buildtool_depend>
+
+  <build_depend>pkg-config</build_depend>
+
   <export>
     <build_type>ament_cmake</build_type>
   </export>
