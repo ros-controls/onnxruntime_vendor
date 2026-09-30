@@ -2,6 +2,11 @@
 Changelog for package onnxruntime_vendor
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Add changes to fix the runtime discoverability of libonnxruntime.so (`#1 <https://github.com/ros-controls/onnxruntime_vendor/issues/1>`_)
+* Contributors: Sai Kishor Kothakota
+
 0.1.0 (2026-06-23)
 ------------------
 * Remove added changelog file and reset package version to 0.0.0
