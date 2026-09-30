@@ -24,9 +24,13 @@ target_link_libraries(my_target PRIVATE onnxruntime::onnxruntime)
 
 Linking the `onnxruntime::onnxruntime` target brings in the headers and
 `libonnxruntime.so` automatically. Runtime discovery of the shared library is
-handled by an environment hook that prepends `opt/onnxruntime_vendor/lib` to
-`LD_LIBRARY_PATH` when the workspace is sourced, so no manual `LD_LIBRARY_PATH`
-configuration is required.
+primarily handled via a canonical absolute RPATH baked into consuming binaries
+at link time (pointing at `opt/onnxruntime_vendor/lib`), so no manual
+`LD_LIBRARY_PATH` configuration is required — this works whether the consumer
+is run from a sourced colcon workspace or from a Debian-installed prefix. An
+environment hook that also prepends `opt/onnxruntime_vendor/lib` to
+`LD_LIBRARY_PATH` when the workspace is sourced is installed as a secondary
+fallback (e.g. for `dlopen`'d providers such as `libonnxruntime_providers_shared.so`).
 
 In your `package.xml`:
 
